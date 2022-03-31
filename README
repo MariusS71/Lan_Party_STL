@@ -1,0 +1,26 @@
+Lanparty (refacere cu STL)
+
+Am ales sa fac si varianta alternativa pentru ca
+am avut timp si am fost curios cat de mult usureaza munca lucrul cu STL
+
+-principalele functii folosite se gasesc in utils.cpp (pe langa cele membre)
+
+Precizari cerinte:
+
+1. Implementarea claselor Player si Team, si salvarea echipelor intr-o lista STL
+
+2. Calcularea repetitiva a unui numar minim de puncte si eliminarea echipei cu punctajul
+   respectiv pana cand raman 2^n echipe in lista
+   
+3. Implementare clasei Match, si salvarea meciurilor din lista intr-o coada STL, repetare
+   rundelor pana la obtinerea unui singur castigator.
+   Am decis ca pentru stivele de castigatori si infranti sa folosesc tot niste liste STL, dar 
+   adaugand elementele si extragandu-le caracteristic functionalitatii stivei, avand deja o 
+   functie pentru extragerea din lista si adaugarea in coada care poate fi reutilizata.
+
+4. Pentru arbore am folosit set cu comparator propriu, pentru a introduce echipele din lista 
+   last8 salvata la 3 in ordinea mediilor, dar si a numelui daca mediile sunt egale.
+   
+5. Pentru arborele AVL, nu am gasit o solutie de STL care sa satisfaca cerinta de afisare al 
+   nivelului 2 al arborelui, asa ca am folosit clasa Node folosita si intial
+   in tema 1, doar ca acum lista last8 salvata la 3, din care se extrag echipele, este de forma STL.
